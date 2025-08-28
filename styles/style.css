@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 92px 50px 95px 50px;
+  height: 293px;
 }
 
 .header__links-list,
@@ -13,7 +14,6 @@ a {
   display: flex;
   flex-direction: row;
   gap: 33px;
-  font-family: Raleway, sans-serif;
   font-size: 18px;
   text-transform: lowercase;
   text-decoration: none;
@@ -41,15 +41,14 @@ a {
   justify-self: end;
   align-items: flex-start;
   max-width: 240px;
-  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 25px;
 }
 
-.header__address-link  {
+.header__address-link {
   font-style: normal;
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
 
 .header__address-place {
@@ -64,17 +63,16 @@ a {
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   width: 1100px;
   min-height: 757px;
   position: relative;
 }
 
-.overlay {
-  position:absolute;
+.cover-overlay {
+  position: absolute;
   inset: 0;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -85,8 +83,7 @@ a {
   height: 385px;
   text-transform: uppercase;
   font-size: 100px;
-  font-family: Raleway, sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 700;
   line-height: 115%;
   letter-spacing: 30px;
@@ -123,36 +120,137 @@ a {
   align-items: center;
   width: 1000px;
   height: 51px;
-  margin: 0 50px 50px 50px;;
+  margin: 0 50px 50px 50px;
   grid-row: 3;
   z-index: 2;
 }
 
 .cover__description-text {
-color: rgb(255, 255, 255);
-font-family: Raleway, sans-serif;
-font-size: 22px;
-font-weight: 400;
-line-height: 28px;
-text-align: left;
-text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .bet__button {
   border: 1px solid white;
   background-color: transparent;
   padding: 11px 32px 11px 32px;
+  cursor: pointer;
 }
 
 .word-spacing-extended {
- word-spacing: 19px;
+  word-spacing: 19px;
 }
+
+/*начало lots*/
 
 .lots {
+  width: 1052px;
+  height: 723px;
+  margin-top: 180px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
-.about {
+.lots__heading {
+  display: block;
+  width: 121px;
+  height: 47px;
+  margin-top: 27px;
+  padding-bottom: 27px;
+  margin-left: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
-.footer {
+.lots__card-list {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 27px;
+  width: 334px;
+  height: 596px;
+}
+
+.lots__card-list-item {
+  position: relative;
+  display: flex;
+  width: 334px;
+  height: 596px;
+  flex-direction:column;
+  align-items: center;
+  padding: 48px 40px 48px 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 48px 40px;
+  width: 334px;
+  height: 596px;
+}
+
+.card-link {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  line-height: 120%;
+  text-decoration: underline;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.card__text {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+  right: 40px;
+  font-size: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.lots-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  width: 192px;
+  height: 25px;
+  margin-top: 32px;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: lowercase;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
